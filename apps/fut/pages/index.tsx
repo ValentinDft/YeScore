@@ -1,11 +1,19 @@
-import styles from '../styles/index.module.scss';
+import { NextPage } from 'next';
+import Head from 'next/head';
+import Navbar from '../components/navbar/navbar';
 
-export function Index() {
+const Index: NextPage = () => {
   return (
-    <div className={styles.page}>
-      <h1>Welcome</h1>
+    <div>
+      <Head>
+        <title>YeScore | Home</title>
+        <meta name="description" content="Football app" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <Navbar />
     </div>
   );
-}
+};
 
 export default Index;
