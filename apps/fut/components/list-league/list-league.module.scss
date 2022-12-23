@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.list-league {
+  background-color: $primary;
+  column-count: 3;
+  padding: 20px 50px;
+  height: fit-content;
+  font-size: 12px;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+    cursor: pointer;
+
+    &:hover {
+      text-underline-offset: 6px;
+      text-decoration: underline;
+    }
+    .img {
+      background-color: grey;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+}

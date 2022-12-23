@@ -1,10 +1,11 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import ListLeague from '../components/list-league/list-league';
 import Navbar from '../components/navbar/navbar';
 
 const Index: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>YeScore | Home</title>
         <meta name="description" content="Football app" />
@@ -12,7 +13,10 @@ const Index: NextPage = () => {
       </Head>
 
       <Navbar />
-    </div>
+      <main>
+        <ListLeague />
+      </main>
+    </>
   );
 };
 
